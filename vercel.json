@@ -5,7 +5,8 @@
     "api/*.php": {
       "runtime": "vercel-php@0.7.1",
       "environment": {
-        "OPENSSL_DIR": "C:\\OpenSSL"
+        "OPENSSL_DIR": "C:\\OpenSSL\\bin",
+        "LD_LIBRARY_PATH": "C:\\OpenSSL\\bin"
       }
     }
   },
