@@ -1,11 +1,14 @@
 {
     "version": 2,
-    "framework": null,
-    "functions": {
-        "api/*.php": {
-          "runtime": "vercel-php@0.7.1"
-        }
-      },
+  "framework": null,
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1",
+      "environment": {
+        "OPENSSL_DIR": "C:\\OpenSSL"
+      }
+    }
+  },
     "routes": [
         {
             "src": "/(favicon\\.ico|robots\\.txt)",
